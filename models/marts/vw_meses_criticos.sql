@@ -1,5 +1,5 @@
 SELECT
-  MIN(Variacao_Sazonal) AS Maior_Derretimento,
+  ABS(MIN(Variacao_Sazonal)) AS Maior_Derretimento,
   d.Mes,
   d.Nome_Mes
 FROM {{ ref('fct_massa_gelo')}} f
