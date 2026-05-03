@@ -6,3 +6,15 @@ sources:
     schema: silver_nasa_data
     tables:
       - name: massa_gelo
+        columns:
+          - name: Data
+            tests:
+              - not_null
+          - name: Entidade
+            tests:
+              - not_null
+          - name: Variacao_Sazonal
+            tests:
+              - not_null
+        
+        
