@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: silver_nasa_data
+    database: projeto-degelo
+    schema: silver_nasa_data
+    tables:
+      - name: massa_gelo
